@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Человечек квадратicon.jpg">
+    <title>Frontend-кейс</title>
+    <link rel="stylesheet" href="Тренера.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <!-- Шапка -->
+            <div class="logo">
+                <img class="asmer" src="Человечек квадрат.jpg" alt="">
+            </div>
+
+            <!-- Меню сайта -->
+            <nav class="nav">
+                <ul class="ul">
+                    <li><a id="страницы" href="Главная страница.html">Главное</a></li>
+                    <li><a id="страницы" href="Новости.html">Новости</a></li>
+                    <li><a id="страницы" href="Сборная Нижнего Новгорода.html">Сборная Нижегородской области</a></li>
+                    <li><a id="страницы" href="Правила.html">Правила сквоша</a></li>
+                    <li><a id="страницы" href="Тренера.html">Тренеры</a></li>
+                    <li><a id="страницы" href="контакты.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Иконка бургерменю -->
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+    </div>
+    <footer style="text-align: center; padding: 10px 0;">
+
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+    <div class="МЕ1">
+        <b class="НМЕ">Николаеноко Мария<br> Евгеньевна</b>
+        <p class="тренер"><img class="Маришка" src="МЕ.JPG" alt="">
+            <p class="Морж"><b>Опыт работы трениром по сквошу:</b> 10лет<br>
+            <b>Личные качества:</b> Глубокие знания техники и правил
+            игры, а также опыт работы с игроками всех уровней - от начинающих до
+             профессионалов. Опыт подготовки команды для участия в международных соревнованиях.</p>
+        </p>
+    </div>
+    <div class="МЕ1">
+        <b class="НМЕ">Пужаев Сергей<br> Михайлович</b>
+        <p class="тренер"><img class="Маришка" src="#" alt="">
+            <p class="Морж"><b>Опыт работы трениром по сквошу:</b> 6лет<br>
+            <b>Личные качества:</b> Умения подготовки юниоров, опыт работы с группами детей от 7 лет. 
+            Опыт проведения турниров, опыт работы с большими группами людей. </p>
+        </p>
+    </div>
+    <div class="МЕ1">
+        <b class="НМЕ">Капралов Евгений Николаевич<br> </b>
+        <p class="тренер"><img class="Маришка" src="#" alt="">
+            <p class="Морж"><b>Опыт работы трениром по сквошу:</b> 1год<br> Обладаю глубокими знаниями техники и правил
+                игры, а также опытом работы с игроками всех уровней - от начинающих до профессионалов. Успешно развивал
+                и подготавливал команды для участия в международных соревнованиях. Отличные коммуникативные навыки,
+                способность мотивировать и вдохновлять игроков.</p>
+        </p>
+    </div>
+    <div class="МЕ1">
+        <b class="НМЕ">Спирин Роман<br> Ярославович</b>
+        <p class="тренер"><img class="Маришка" src="#" alt="">
+            <p class="Морж"><b>Опыт работы трениром по сквошу:</b> 3года<br> 
+                <b>Личные качества:</b> Тренер с умение найти общий язык с подростками и взрослыми.
+            Опыт работы с новичками, которые хотят научиться играть в сквош.  </p>
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Человечек квадратicon.jpg">
+    <title>Frontend-кейс</title>
+    <link rel="stylesheet" href="Сборная Нижнего Новгорода.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <!-- Шапка -->
+            <div class="logo">
+                <img class="asmer" src="Человечек квадрат.jpg" alt="">
+            </div>
+
+            <!-- Меню сайта -->
+            <nav class="nav">
+                <ul class="ul">
+                    <li><a id="страницы" href="Главная страница.html">Главное</a></li>
+                    <li><a id="страницы" href="Новости.html">Новости</a></li>
+                    <li><a id="страницы" href="Сборная Нижнего Новгорода.html">Сборная Нижегородской области</a></li>
+                    <li><a id="страницы" href="Правила.html">Правила сквоша</a></li>
+                    <li><a id="страницы" href="Тренера.html">Тренеры</a></li>
+                    <li><a id="страницы" href="контакты.html">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <!-- Иконка бургерменю -->
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+    </div>
+    <footer style="text-align: center; padding: 10px 0;">
+        
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        })
+    </script>
+</body>
+<h1 class="сборная">Юниорская сборная</h1>
+</body>
+</html>

@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    flex-grow: 1;
+}
+
+.open {
+    display: flex !important;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    background-color: #ecc646;
+    color: #FAF6F2;
+    padding: 0 40px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #FAF6F2;
+    margin-left: -10px;
+    width: 90px;
+    height: 90px;
+}
+
+.asmer {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.nav {
+    display: flex;
+    width: 700px;
+    padding: 0 40px;
+}
+
+.nav ul {
+    width: 2фф0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li a {
+    color: #000000;
+    border: 0px solid black;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background: #e4760f;
+    color: rgb(44, 44, 44)
+}
+
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+
+.burger span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #FAF6F2;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #FAF6F2;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+    top: 0
+}
+
+.burger::after {
+    bottom: 0
+}
+
+
+/* Добавляем класс active для анимации иконки бургера */
+.burger.active span {
+    transform: scale(0)
+}
+
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+
+/* При разрешении экрана 900px и ниже, выводим на экран иконку бургера */
+@media (max-width: 900px) {
+
+    .burger {
+        display: flex
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: #ccaa14e3;
+        animation: burgerAnimation 0.4s;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+@keyframes burgerAnimation {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* все меню кончилось*/
+
+
+.yy {
+    border: 0px solid rgb(216, 149, 4);
+    text-shadow: 1px 1px rgba(61, 59, 59, 0.459);
+    position: absolute;
+    right: 100px;
+    top: 70px;
+    color: #000
+}
+
+body {
+    background: url(Человечек\ фон.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.Задачи {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 29px;
+    margin-left: 10px;
+}
+
+.p {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #ffc955ce;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Cormorant SC;
+    line-height: 35px;
+}
+.Best {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+.Cool {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #e4ad5ac9;
+}
+.Маришка {
+    border: 0.5px solid rgb(43, 42, 42);
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-right: 10px;
+    float: left;
+    margin-left: 10px;
+    width: 150px;
+    height: 210px;
+}
+
+.НМЕ {
+    margin-top: 10px;
+    margin-right: 80px;
+    font-size: 20px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+.М {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+footer {
+    border: 1px solid black;
+    border-radius: 10px 10px 0 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    background: hsl(0, 1%, 51%);
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.footer {
+    margin-bottom: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.кнопка {
+
+color:#ece2e2;
+margin-bottom: 5px;
+padding: 2px;
+text-decoration: none;
+
+}
+.кнопка1 {
+    border: 1px solid black;
+    background: #d12d10;
+    box-shadow: 0 2px 2px #f7cece;
+    border-radius: 20px;
+    margin-right: 6px;
+    margin-left: 6px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
